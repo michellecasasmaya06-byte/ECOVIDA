@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- SEMÁNTICA Y ACCESIBILIDAD: Declaración  del idioma -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- RESPONSIVE: Ajuste para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3</title>
+    <!-- FRAMEWORK: CDN de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS3 PERSONALIZADO: Estilos propios e identidad visual -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- 1. CABECERA (HEADER): Navbar de Bootstrap + HTML5 Semántico -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold">
+                    <span class="badge bg-primary">Ecologia</span>
+                </a>            
+                <!-- Menú de navegación principal -->
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#unidades">Unidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#recursos">Recursos Didácticos</a></li>
+                    </ul>
+
+                    <!-- Cuadro de búsqueda -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 form-control-sm" type="search" placeholder="Buscar recurso...">
+                        <button class="btn btn-outline-light btn-sm" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Breve descripción del sitio) -->
+        <div class="bg-success text-white text-center py-4 px-3 shadow-sm">
+            <h1 class="h3 fw-bold">Unidad 3. Desarrollo sostenible y cuidado del ambiente</h1>
+            <p class="mb-0 lead">¡Bienvenidos a la tercera unidad!</p>
+            <img src="cuido.png" height="300" width="400"><br>
+        </div>
+    </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5">
+    <!-- 2. SECCIÓN: UNIDADES DEL CURSO (Maquetación con Bootstrap Grid) -->
+        <section id="unidades" class="mb-5">
+            <center><h2 class="h4 text-center mb-4 titulo-seccion">CONTENIDOS:</h2></center>
+            <div class="row g-4">
+
+                <!-- Cambio -->
+                <article class="col-md-4">
+                    <div class="card h-100 tarjeta-educativa">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Tema 1. Desarrollo sostenible</h3>
+                            <h6><i><a href="index.html">Ir al inicio</a></i></h6>
+                            <img src="desa.png" height="300" width="300"><br>
+                            <p class="card-text text-muted"><br>
+                                El desarrollo sostenible consiste en satisfacer las necesidades del presente sin comprometer la capacidad de las futuras generaciones para satisfacer sus propias necesidades. Busca mantener un equilibrio entre el crecimiento económico, el bienestar social y la protección del medio ambiente.<br>
+                                <br>
+                                - Principales dimensiones del desarrollo sostenible:<br>
+                                - Ambiental: protege los ecosistemas, conserva la biodiversidad y promueve el uso responsable de los recursos naturales.<br>
+                                - Social: busca mejorar la calidad de vida, reducir las desigualdades y favorecer el acceso a servicios básicos.<br>
+                                - Económica: impulsa actividades productivas que aprovechen los recursos de manera responsable y puedan mantenerse a largo plazo.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Perdida -->
+                <article class="col-md-4">
+                    <div class="card h-100 tarjeta-educativa">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Tema 2. Manejo de residuos y reciclaje</h3>
+                            <h6><i><a href="https://onu-habitat.org/index.php/recolectar-y-eliminar-residuos-de-manera-eficiente">Mas informacion</a></i></h6>
+                            <center><img src="residuo.png" height="200" width="300"></center><br>
+                            <p class="card-text text-muted">El manejo de residuos comprende las acciones que se realizan para reducir, separar, recolectar, reutilizar, reciclar y disponer adecuadamente de los materiales que desechamos. Su propósito es disminuir la contaminación y evitar que los residuos dañen el ambiente y la salud de los seres vivos.<br>
+                                <br>
+Las tres erres:<br>
+Reducir: consiste en consumir únicamente lo necesario y evitar productos desechables o con exceso de empaque.<br>
+Reutilizar: significa dar un nuevo uso a los objetos antes de desecharlos, como utilizar frascos para guardar materiales.<br>
+Reciclar: consiste en transformar materiales recuperados, como papel, cartón, vidrio y ciertos plásticos, para fabricar nuevos productos.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Contaminacion -->
+                <article class="col-md-4">
+                    <div class="card h-100 tarjeta-educativa">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Tema 3. Acciones para el cuidado del ambiente</h3>
+                            <h6><i><a href="https://eacnur.org/es/blog/acciones-cuidar-medio-ambiente-casa">Mas informacion</a></i></h6>
+                            <center><img src="acc.png" height="400" width="300"></center><br>
+                            <p class="card-text text-muted">El cuidado del ambiente consiste en realizar acciones individuales y colectivas para proteger los recursos naturales, conservar la biodiversidad y disminuir los impactos negativos de las actividades humanas. Estas acciones son importantes porque contribuyen a mantener las condiciones necesarias para la vida y el equilibrio de los ecosistemas.<br>
+                                <br>
+Principales acciones para cuidar el ambiente:<br>
+-Ahorrar agua: cerrar las llaves cuando no se utilicen, reparar fugas y evitar desperdiciar agua al realizar actividades cotidianas.<br>
+-Proteger las áreas verdes: cuidar los árboles, las plantas y los espacios naturales, evitando dañar la vegetación.<br></p>
+                    </div>
+                </article>
+
+                            </div>
+        </section>
+        <main class="quiz-container">
+  <h2>Autoevaluación: Acciones para el cuidado del medio ambiente</h2>
+  <form id="quizForm">
+    <fieldset>
+      <legend>¿Que accion ayudan a cuidar el medio ambiente?</legend>
+      <label><input type="radio" name="p1" value="a"> &lt;Tirar basura en las calles&gt;</label><br>
+      <label><input type="radio" name="p1" value="b"> &lt;Ahorrar agua y reciclar&gt;</label><br>
+      <label><input type="radio" name="p1" value="c"> &lt;Desperdiciar los recursos naturales&gt;</label>
+    </fieldset>
+
+    <button type="button" onclick="evaluarQuiz()">Enviar Respuestas</button>
+  </form>
+
+  <div id="resultado" class="feedback-box"></div>
+</main>
+<script src="script.js"></script>
+
+        <!-- 3. SECCIÓN: RECURSOS DIDÁCTICOS (Componentes Educativos) -->
+        <section id="recursos">
+                <h2 class="h4 text-center mb-4 titulo-seccion">Recursos Didácticos</h2><br>
+                <!-- Lectura / Texto -->
+                <a href="https://www.redalyc.org/pdf/174/17412302003.pdf">Ir a recurso educativo </a> <br>
+        </section>
+    </main>
+
+        <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p class="mb-0 small">&copy; 2026 Licenciatura en Tecnología Educativa | Fundamentos de Programación</p>
+    </footer>
+</body>
+</html>
