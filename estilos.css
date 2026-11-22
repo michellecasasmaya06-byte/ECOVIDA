@@ -1,0 +1,86 @@
+/* 1. CSS3 E IDENTIDAD VISUAL:
+Definicion de Variables de Color */
+:root {
+--color-primario: #63bc75;
+--color-fondo: #9ce39f;
+--borde-tarjeta: 4px solid var(--color-
+primario);
+}
+
+/* 2. ESTILOS BASICOS Y TIPOGRAFIA */
+body {
+background-color: var(--color-fondo);
+font-family: 'Segoe UI', Tahoma, Geneva,
+Verdana, sans-serif;
+}
+
+
+/* Identidad visual de la seccion */
+.titulo-seccion {
+color: #064d0f;
+font-weight: 700;
+border-bottom: 2px solid var(--color-
+primario);
+display: inline-block;
+
+padding-bottom: 5px;
+
+}
+
+/* 3. CAJAS Y BORDES (Personalizacion sobre
+Bootstrap) */
+
+.tarjeta-educativa {
+
+border: none;
+
+border-top: var(--borde-tarjeta);
+
+box-shadow: 0 4px 6px rgb(4, 94, 18);
+
+/* Transicion para el efecto interactivo al
+pasar el cursor */
+
+transition: transform 0.2s ease, box-shadow
+0.2s ease;
+
+}
+
+
+/* Interacción visual (Hover) */
+
+.tarjeta-educativa:hover {
+
+transform: translateY(-4px);
+
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+/* 4. DISEÑO ADAPTABLE (Responsive con
+Media Queries) */
+
+/* Ajuste de márgenes y bordes para
+pantallas pequeñas */
+
+@media (max-width: 768px) {
+
+.titulo-seccion {
+
+font-size: 1.25rem;
+
+}
+
+
+/* Modifica el borde visual de la tarjeta
+cuando pasa a vista vertical */
+
+.tarjeta-educativa {
+
+border-top: none;
+
+border-left: var(--borde-tarjeta);
+
+}
+
+}
